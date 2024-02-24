@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Startup Company</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Animated css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <script>
+    function validateForm() {
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+
+      // Check if all fields are filled
+      if (name && email && message) {
+        showMessage();
+      } else {
+        alert('Please fill in all the fields');
+      }
+    }
+    function showMessage() {
+      alert('Submitted successfully!');
+      changeButtonColor();
+    }
+    function changeButtonColor() {
+      // Change the button color here
+      var submitButton = document.getElementById('submitBtn');
+      submitButton.style.backgroundColor = 'green'; // Change to your desired color
+    }
+    function OpenLink() {
+      window.location.href = 'https://www.interseller.in/';
+    }
+  </script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom" style="background-color: #1c334b;">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/QuantaRock Systems-white.png" alt="Logo" width="auto" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+              <a class="dropdown-item" href="#">Colocation</a>
+              <a class="dropdown-item" href="#">Dedicated Server</a>
+              <a class="dropdown-item" href="#">Procurement</a>
+              <a class="dropdown-item" href="#">Engineers</a>
+              <a class="dropdown-item" href="#">Support and Mananged Services</a>
+              <a class="dropdown-item" href="#">Certifications and Compilance</a>
+              <a class="dropdown-item" href="#">Web and service monitoring</a>
+              <a class="dropdown-item" href="#">Networking</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#deals">Deals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="con">
+      <h1 class="wow animate__animated animate__fadeInUp animate__delay-.5s">Reduce your IT Cost<br>With QuantaRock</h1>
+      <p class="wow animate__animated animate__fadeInUp animate__delay-.5s ">We are always Happy to build your technical
+        solution <br> Also we help to reduce the IT cost.</p>
+    </div>
+    <!-- <a href="#" class="btn btn-info" style="margin-left: 10px;">View Shop</a> -->
+    <button class="btn btn-outline-primary" onclick="OpenLink()">View Shop</button>
+  </section>
+
+  <!-- Service Section -->
+  <section id="features" class="feature-section" style="background: linear-gradient(180deg, #BEE8F5 0%,
+  rgba(216, 219, 220, 0.106154) 89.38%,
+  rgba(217, 217, 217, 0) 100%);">
+    <div class="container wow animate__animated animate__fadeInUp animate__delay-.5s">
+      <h2 style="font-size: 50px; margin-top:0px;">QuantaRock Services</h2>
+      <div class="row" style="padding-top: 50px;">
+        <div class="col-md-4" style="padding-top: 20px;">
+          <img src="images/IT.png">
+          <h2>IT Hardware</h2>
+          <p>We deal in All IT Hardwares inlcuding Servers and networking equipments</p>
+        </div>
+        <div class="col-md-4">
+          <img src="images/Data.png" style="padding-top: 20px;">
+          <h2>Datacenter and Hosting
+            Solutions</h2>
+          <p>We deal in All IT Hardwares inlcuding Servers and networking equipments</p>
+        </div>
+        <div class="col-md-4">
+          <img src="images/software.png" style="padding-top: 20px;">
+          <h2>Software and licensing</h2>
+          <p>We deal in All IT Hardwares inlcuding Servers and networking equipments</p>
+        </div>
+        <div class="col-md-4">
+          <img src="images/certificate.png" style="padding-top: 20px;">
+          <h2>Compliance and certification</h2>
+          <p>We deal in All IT Hardwares inlcuding Servers and networking equipments</p>
+        </div>
+        <div class="col-md-4">
+          <img src="images/Maintainance.png" style="padding-top: 20px;">
+          <h2>IT Leasing and maintainance</h2>
+          <p>We deal in All IT Hardwares inlcuding Servers and networking equipments</p>
+        </div>
+        <div class="col-md-4">
+          <img src="images/Tech.png" style="padding-top: 20px;">
+          <h2>Tech Consultation and Project
+            Management</h2>
+          <p>We deal in All IT Hardwares inlcuding Servers and networking equipments</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--Teams & Expertise-->
+  <section class="Expertize">
+    <div class="container">
+
+      <h1 class="wow animate__animated animate__fadeInUp animate__delay-.7s"><b style="font-size: 30px;">Take a look
+          inside</b></h1>
+      <p class="wow animate__animated animate__fadeInBottomLeft animate__delay-1s">To understand more about us,<br>You
+        may download our portfolio</p>
+      <div class="row flex-md-row flex-column">
+        <a href="QuantaRockSystemsPortfolio.pdf" class="btn btn-primary" download>Download</a>
+
+        <div class="col-md-4">
+          <div class="team-member wow animate__animated animate__fadeInRight animate__delay-.1s">
+            <img src="images/laptop.png" class="img-fluid" alt="Team Member">
+          </div>
+        </div>
+      </div>
+      <!-- Repeat similar structure for other team members -->
+
+    </div>
+
+    <div class="container custom-container">
+      <div class="row flex-md-row flex-column">
+        <div
+          class="col-lg-3 row flex-md-row flex-column wow animate__animated animate__fadeInBottomLeft animate__delay-.1s ">
+          <img src="images/img.png" alt="Safe and reliable" class="img-fluid ">
+        </div>
+        <div class="row">
+          <div class=" row justify-content-center">
+            <div class="col-md-6 align-items-center four padding">
+              <h2 class="wow animate__animated animate__fadeInBottomRight animate__delay-.6s">Team and Expertise</h2>
+
+
+              <p class="wow animate__animated animate__fadeInBottomRight animate__delay-.6s">
+                At QuantaRock Systems Pvt., our team is the heartbeat of our success. Comprising dedicated professionals
+                with diverse expertise, we are united by a shared commitment to excellence and innovation. Each member
+                brings a unique set of skills, experiences, and perspectives, creating a dynamic synergy that drives our
+                company forward.Our team Areas of Expertise includes IT Hardware Solutions, Data Center Solutions,
+                Procurement Services, Customer-Centric Approach
+                <br>
+                <br>
+                We believe in the power of teamwork and continuously invest in the professional development of our
+                members to stay at the forefront of industry trends and innovations.
+              </p>
+            </div>
+            <!-- Repeat similar structure for other expertise areas -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Offerings Section-->
+  <section class="Offerings" style="background: linear-gradient(180deg, #BEE8F5 0%,
+  rgba(216, 219, 220, 0.106154) 89.38%,
+  rgba(217, 217, 217, 0) 100%);">
+    <h1 style="text-align: center; padding-top: 20px;">Special Offering</h1>
+    <br><br><br>
+    <div class="container-fluid mt-4 wow animate__animated animate__zoomIn animate__delay-.1s">
+      <div class="row">
+        <div class="col-md-6 col-12" style="padding-top: 15px;">
+          <div class="card" style="border-radius: 30px;">
+            <div class="card-body">
+              <h5 class="card-title" style="text-decoration: underline; text-align: center;">Colocation Space</h5>
+              <p class="card-text" style="margin-top:0; padding-top:15px; text-align: center; overflow: hidden;">At
+                QuantaRock Systems,Colocation space refers to the leasing of physical space within
+                a data center facility by businesses or individuals to house their servers and networking equipment.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-12" style="padding-top: 15px;">
+          <div class="card" style="border-radius: 30px;">
+            <div class="card-body">
+              <h5 class="card-title" style="text-decoration: underline; text-align: center;">Cloud Server</h5>
+              <p class="card-text" style="margin-top:0; padding-top:15px; text-align: center; overflow: hidden;">A cloud
+                server is a pooled, centralized server resource that is hosted and delivered over a network—typically
+                the Internet—and accessed on demand by multiple users.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-12" style="padding-top: 15px;">
+          <div class="card" style="border-radius: 30px;">
+            <div class="card-body">
+              <h5 class="card-title" style="text-decoration: underline; text-align: center;">Dedicated Server</h5>
+              <p class="card-text" style="margin-top:0; padding-top:15px; text-align: center; overflow: hidden;">A
+                dedicated server is a physical server that's assigned to a single organization. You
+                need a server to host or run your applications and websites so that your users can access your services.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-12" style="padding-top: 15px;">
+          <div class="card" style="border-radius: 30px;">
+            <div class="card-body">
+              <h5 class="card-title" style="text-decoration: underline; text-align: center;">VPN and Shared Hosting</h5>
+              <p class="card-text" style="margin-top:0; padding-top:15px; text-align: center; overflow: hidden;">VPS, or
+                Virtual Private Server, is a virtualized server environment created by
+                partitioning a physical server.Shared hosting is a web hosting service where multiple websites share
+                resources on the same server.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Deals Section-->
+  <section class="deal" id="deals">
+    <div class="deals">
+      <div class="Dcontainer" style="margin-top: 35px;">
+
+        <center>
+          <h1>Deals In</h1>
+          <p>Here is the some companies with them we deals and spread our sevices all over the India.</p>
+
+        </center>
+
+
+        <div class="collarib">
+          <div class="container">
+
+            <div class="col" style="margin-top: 80px;">
+              <center>
+                <marquee direction="left" scrollamount="20">
+                  <img src="images/client_!.png" alt="">
+                  <img src="images/client-2.png" alt="">
+                  <img src="images/client_3.jpg" alt="">
+                  <img src="images/client_4.png" alt="">
+                </marquee>
+              </center>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-light py-5 ">
+    <div class="container wow animate__animated animate__fadeInUp animate__delay-.1s">
+      <h2>Contact Us</h2>
+      <p>We are flexible in our business with our collaborators
+        and partner's.<br>It help us to grow more with our clients.
+        To connect please fill<br> few details and click on submit
+        button!</p>
+      <br>
+      <br>
+      <br>
+      <p>Email : info@quantarock.in <br>Phone : +91-9755010858 <br>Address : 444, Shyam Nagar(main), Sukhliya
+        Indore, Madhya Pradesh,India</p> <br>
+
+      <!--div class="center"-->
+      <button class="btn btn-info btn-block" id="openFormBtn" style="max-width: 250px;">Connect to build
+        Buisness</button>
+    </div>
+    <div id="contactFormPopup">
+      <span class="close" onclick="closeForm()">&times;</span>
+      <h2>Contact Us</h2>
+      <form
+        action='https://script.google.com/macros/s/AKfycbwVnqrE6kS_3EzRQkM08v_ee6-P0sXiI4e4oun2II6mTahyPes0VDVgjzfOZY4lwBlfvw/exec'
+        method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="enter name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="enter email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="number" id="number" name="phone" placeholder="enter phone" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="type of message here..." required></textarea>
+
+        <!-- <button type="submit" value="submit" onclick="muFunction()">Submit</button> -->
+        <input type="submit" class="button" id="submitBtn" value="Submit" onclick="validateForm()">
+        <input type="reset" class="button" value="Reset">
+      </form>
+    </div>
+  </section>
+  <!--footer-->
+  <footer class="footer">
+    <div class="container text-center">
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="https://www.instagram.com/quantarock_systems_india/" target="_blank" class="footer-link"><i
+              class="fab fa-instagram"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://twitter.com/VipendramehraVM" target="_blank" class="footer-link"><i
+              class="fab fa-twitter"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.linkedin.com/company/quantarock-systems" target="_blank" class="footer-link"><i
+              class="fab fa-linkedin"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="vipendra@quantarock.in" class="footer-link"><i class="fas fa-envelope"></i></a>
+        </li>
+      </ul>
+      <p>copyright &copy; 2023 QuantaRock System Pvt. Ltd.</p>
+    </div>
+
+  </footer>
+  <!-- Bootstrap JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
